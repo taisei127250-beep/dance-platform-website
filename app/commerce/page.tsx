@@ -126,8 +126,16 @@ export default function CommercePage() {
                       デジタルコンテンツ（チケット）のため、原則として返品・返金には応じられません。<br />
                       ただし、以下の条件を満たす場合は返金対応いたします：
                       <ul className="list-disc pl-5 mt-2 space-y-1">
-                        <li>イベント開始の3日前（72時間前）までにキャンセル申請がされた場合</li>
-                        <li>イベント主催者都合によりイベントが中止された場合</li>
+                        <li>イベント開始の3日前（72時間前）までにキャンセル申請がされた場合<br />
+                          <span className="text-sm text-gray-500 dark:text-gray-500">
+                            ※ プラットフォーム手数料（1.4%）、決済手数料（3.6%）、返金処理手数料（100円）を差し引いた金額を返金します
+                          </span>
+                        </li>
+                        <li>イベント主催者都合によりイベントが中止された場合<br />
+                          <span className="text-sm text-gray-500 dark:text-gray-500">
+                            ※ 参加費全額を返金します（手数料は主催者が負担）
+                          </span>
+                        </li>
                         <li>決済エラーにより二重決済が発生した場合</li>
                       </ul>
                       <span className="block mt-2">
