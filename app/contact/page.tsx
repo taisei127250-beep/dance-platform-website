@@ -108,8 +108,12 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">
                     Q. イベントを主催したいのですが
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    A. イベント主催者としての登録をご希望の方は、上記お問い合わせ先まで「主催者登録希望」と明記してご連絡ください。担当者より詳細をご案内いたします。
+                  <p className="text-gray-600 dark:text-gray-400 mb-3">
+                    A. アプリ内で誰でも簡単にイベントを作成できます。メールアドレスで登録後、すぐにイベントページの作成が可能です。担当者とのやりとりは不要です。
+                  </p>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                    <strong className="text-gray-900 dark:text-white">事前決済機能をご利用の場合：</strong><br />
+                    参加費の事前決済を受け付けたい場合は、Stripeアカウントとの連携が必要です。アプリ内の「主催者設定」→「決済設定」からStripeアカウントを接続してください。Stripeアカウントをお持ちでない場合は、無料で作成できます。
                   </p>
                 </div>
 
