@@ -9,7 +9,7 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-gradient-to-br from-purple-600 via-pink-600 to-orange-500 text-white py-20 md:py-32">
+        <section className="text-white py-20 md:py-32" style={{background: 'linear-gradient(to bottom right, #FF9F42, #FF9F42, #3B9BFF)'}}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               全国のダンスイベントを
@@ -61,8 +61,8 @@ export default function Home() {
 
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-                <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{backgroundColor: '#FFE8CC'}}>
+                  <svg className="w-6 h-6" style={{color: '#FF9F42'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                   </svg>
                 </div>
@@ -73,8 +73,8 @@ export default function Home() {
               </div>
 
               <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-                <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900 rounded-xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-pink-600 dark:text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{backgroundColor: '#D6EDFF'}}>
+                  <svg className="w-6 h-6" style={{color: '#3B9BFF'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" />
                   </svg>
                 </div>
@@ -85,8 +85,8 @@ export default function Home() {
               </div>
 
               <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-lg">
-                <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900 rounded-xl flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-orange-600 dark:text-orange-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{backgroundColor: '#FFE8CC'}}>
+                  <svg className="w-6 h-6" style={{color: '#FF9F42'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
@@ -102,7 +102,7 @@ export default function Home() {
         {/* For Organizers Section */}
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl p-12 text-white text-center">
+            <div className="rounded-3xl p-12 text-white text-center" style={{background: 'linear-gradient(to right, #3B9BFF, #5BA8FF)'}}>
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 イベント主催者の方へ
               </h2>
@@ -111,7 +111,8 @@ export default function Home() {
               </p>
               <Link
                 href="/contact"
-                className="inline-block bg-white text-blue-600 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all transform hover:scale-105"
+                className="inline-block bg-white px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition-all transform hover:scale-105"
+                style={{color: '#3B9BFF'}}
               >
                 主催者登録について問い合わせる
               </Link>
