@@ -202,8 +202,128 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CTA Section - 黒背景 */}
+        {/* Pricing Section - 料金プラン */}
         <section className="py-16 md:py-24 bg-black">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-white">
+                シンプルで透明性の高い料金体系
+              </h2>
+              <p className="text-lg md:text-xl text-gray-300">
+                すべての機能を無料で、制限なく利用できます
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              {/* Main Pricing Card */}
+              <div className="bg-zinc-900 rounded-3xl p-8 md:p-12 border-2 border-gray-700">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                    完全無料プラン
+                  </h3>
+                  <p className="text-gray-400">すべてのユーザーが利用可能</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-8 mb-8">
+                  {/* For Dancers */}
+                  <div>
+                    <h4 className="text-xl font-bold mb-4" style={{color: '#FF8904'}}>
+                      ダンサー向け
+                    </h4>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#FF8904'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">イベント検索・閲覧: 無制限</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#FF8904'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">エントリー: 無制限</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#FF8904'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">検索条件の保存: 無制限</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#FF8904'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">QRチケット表示</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  {/* For Organizers */}
+                  <div>
+                    <h4 className="text-xl font-bold mb-4" style={{color: '#047AFF'}}>
+                      主催者向け
+                    </h4>
+                    <ul className="space-y-3">
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#047AFF'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">イベント作成: 無制限</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#047AFF'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">参加者管理: 無制限</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#047AFF'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">QRコード受付機能</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <svg className="w-6 h-6 flex-shrink-0 mt-0.5" style={{color: '#047AFF'}} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                        <span className="text-gray-300">PUSH通知送信</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Fee Structure */}
+                <div className="border-t border-gray-700 pt-8">
+                  <h4 className="text-xl font-bold text-white mb-6 text-center">
+                    料金について
+                  </h4>
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-black rounded-2xl p-6 border border-gray-700">
+                      <div className="text-sm text-gray-400 mb-2">プラットフォーム手数料</div>
+                      <div className="text-3xl font-bold text-white mb-2">1.4%</div>
+                      <p className="text-sm text-gray-400">
+                        有料イベントの参加費に対して
+                      </p>
+                    </div>
+                    <div className="bg-black rounded-2xl p-6 border border-gray-700">
+                      <div className="text-sm text-gray-400 mb-2">決済手数料（Stripe）</div>
+                      <div className="text-3xl font-bold text-white mb-2">3.6%</div>
+                      <p className="text-sm text-gray-400">
+                        クレジットカード決済時のみ
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-center text-gray-400 mt-6 text-sm">
+                    ※ 無料イベントの場合、すべての手数料は0円です
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section - 黒背景 */}
+        <section className="py-16 md:py-24 bg-zinc-950">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-white">
               今すぐダウンロード
