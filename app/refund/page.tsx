@@ -27,252 +27,253 @@ export default function RefundPage() {
                 基本方針
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                Street Dance Navi（以下「当サービス」）では、イベントエントリーに関する返金について、以下のポリシーを定めています。デジタルコンテンツ（チケット）の性質上、原則として返品・返金には応じられませんが、一定の条件下では返金対応を行います。
+                Street Dance Naviは、ユーザーの皆様に安心してサービスをご利用いただくため、明確な返金ポリシーを定めています。本ポリシーは、有料イベントへのエントリー後のキャンセル・返金について規定します。
               </p>
             </section>
 
-            {/* 返金可能なケース */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                返金可能なケース
+                1. 主催者都合によるイベントキャンセル
               </h2>
 
-              <div className="space-y-6">
-                {/* Case 1 */}
-                <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border-l-4 border-green-500">
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white flex items-center gap-2">
-                    <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    1. イベント開始の3日前までのキャンセル
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    イベント開始時刻の<strong className="text-gray-900 dark:text-white">72時間（3日）前まで</strong>にキャンセル申請された場合、全額返金いたします。
-                  </p>
-                  <div className="bg-white dark:bg-gray-800 p-4 rounded-lg">
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                      <strong className="text-gray-900 dark:text-white">例:</strong> 12月25日 18:00開始のイベントの場合
-                    </p>
-                    <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                      <li>✅ 12月22日 17:59まで → <span className="text-green-600 dark:text-green-400 font-semibold">全額返金可能</span></li>
-                      <li>❌ 12月22日 18:00以降 → <span className="text-red-600 dark:text-red-400 font-semibold">返金不可</span></li>
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Case 2 */}
-                <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border-l-4 border-green-500">
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white flex items-center gap-2">
-                    <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    2. イベント主催者都合による中止
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    イベント主催者の都合により、イベントが中止または延期された場合、全額返金いたします。
-                  </p>
-                  <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2">
-                    <li>主催者による中止通知後、自動的に返金処理を開始します</li>
-                    <li>イベント延期の場合、延期後の日程への振替または返金を選択できます</li>
-                    <li>天災・感染症拡大等による不可抗力の中止も含みます</li>
-                  </ul>
-                </div>
-
-                {/* Case 3 */}
-                <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border-l-4 border-green-500">
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white flex items-center gap-2">
-                    <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    3. 決済エラーによる二重決済
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    システムエラーにより同一イベントへの決済が重複して行われた場合、重複分を全額返金いたします。
-                  </p>
-                  <p className="text-sm text-gray-500 dark:text-gray-500">
-                    ※ 決済履歴のスクリーンショットを添えてお問い合わせください
-                  </p>
-                </div>
-
-                {/* Case 4 */}
-                <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-xl border-l-4 border-green-500">
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white flex items-center gap-2">
-                    <svg className="w-6 h-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    4. サービス不具合による問題
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    当サービスのシステム不具合により、エントリーが正常に行われなかった場合や、チケットが表示されない場合など、当サービス側に起因する問題が発生した場合は返金対応いたします。
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            {/* 返金不可のケース */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                返金不可のケース
-              </h2>
-
-              <div className="space-y-4">
-                <div className="bg-red-50 dark:bg-red-900/20 p-6 rounded-xl border-l-4 border-red-500">
-                  <ul className="space-y-3 text-gray-600 dark:text-gray-400">
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>イベント開始の3日前（72時間前）を過ぎてのキャンセル</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>お客様のご都合による返品・返金（期限内のキャンセルを除く）</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>イベント当日の体調不良・急用・交通トラブル等による欠席</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>チケットの譲渡・転売後の返金請求</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>イベント内容への不満・期待との相違による返金請求</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <svg className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                      </svg>
-                      <span>既にイベントが終了した後の返金請求</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </section>
-
-            {/* 返金方法 */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                返金方法
-              </h2>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                返金は、決済時に使用されたクレジットカードに対して行われます。
-              </p>
-
-              <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-xl">
-                <h3 className="text-lg font-bold mb-3 text-gray-900 dark:text-white">
-                  返金までの流れ
+              <div className="bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500 p-6 mb-6">
+                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                  参加費を全額返金します
                 </h3>
-                <ol className="space-y-3 text-gray-600 dark:text-gray-400">
-                  <li className="flex gap-3">
-                    <span className="font-bold text-blue-600 dark:text-blue-400 flex-shrink-0">1.</span>
-                    <span>アプリ内またはお問い合わせから返金申請</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="font-bold text-blue-600 dark:text-blue-400 flex-shrink-0">2.</span>
-                    <span>当サービスで内容確認（1〜2営業日）</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="font-bold text-blue-600 dark:text-blue-400 flex-shrink-0">3.</span>
-                    <span>承認後、Stripe経由で返金処理開始</span>
-                  </li>
-                  <li className="flex gap-3">
-                    <span className="font-bold text-blue-600 dark:text-blue-400 flex-shrink-0">4.</span>
-                    <span>5〜10営業日程度でカード会社経由で返金完了</span>
-                  </li>
-                </ol>
-
-                <div className="mt-4 pt-4 border-t border-blue-200 dark:border-blue-800">
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
-                    <strong className="text-gray-900 dark:text-white">注意:</strong> カード会社の処理により、実際の返金反映までに時間がかかる場合があります。カード明細への反映時期は各カード会社によって異なります。
-                  </p>
-                </div>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  イベント主催者の都合により、イベントが中止・延期となった場合、参加者へ参加費を全額返金いたします。
+                </p>
               </div>
-            </section>
 
-            {/* キャンセル方法 */}
-            <section className="mb-12">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                キャンセル・返金申請の方法
-              </h2>
+              <h3 className="text-xl font-bold mb-3 mt-6 text-gray-900 dark:text-white">
+                返金の詳細
+              </h3>
+              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2 mb-4">
+                <li><strong>返金額:</strong> 参加費全額（決済手数料・プラットフォーム手数料も含む）</li>
+                <li><strong>手数料負担:</strong> 主催者が負担します</li>
+                <li><strong>返金期間:</strong> 7〜10営業日以内に返金処理を完了します</li>
+                <li><strong>返金方法:</strong> 決済時と同じクレジットカードへ自動返金されます</li>
+              </ul>
 
-              <div className="grid md:grid-cols-2 gap-6">
-                {/* App */}
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
-                  <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-xl flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
-                    </svg>
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl mb-6">
+                <h4 className="font-bold mb-3 text-gray-900 dark:text-white">返金額の計算例</h4>
+                <p className="text-gray-600 dark:text-gray-400 mb-2">
+                  参加費5,000円のイベントが主催者都合でキャンセルされた場合:
+                </p>
+                <div className="bg-white dark:bg-gray-900 p-4 rounded-lg font-mono text-sm">
+                  <div className="space-y-1">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600 dark:text-gray-400">元の参加費:</span>
+                      <span className="text-gray-900 dark:text-white">5,000円</span>
+                    </div>
+                    <div className="border-t border-gray-300 dark:border-gray-700 my-2"></div>
+                    <div className="flex justify-between font-bold">
+                      <span className="text-gray-900 dark:text-white">参加者への返金額:</span>
+                      <span className="text-orange-600 dark:text-orange-400">5,000円（全額）</span>
+                    </div>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                    アプリから申請（推奨）
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    アプリの「マイページ」→「チケット」→ 該当イベントを選択 → 「キャンセル」ボタンから申請
-                  </p>
-                  <p className="text-sm text-green-600 dark:text-green-400">
-                    ✓ 最短で処理されます<br />
-                    ✓ 自動でエントリーIDが送信されます
-                  </p>
                 </div>
-
-                {/* Email */}
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
-                  <div className="w-12 h-12 bg-pink-100 dark:bg-pink-900 rounded-xl flex items-center justify-center mb-4">
-                    <svg className="w-6 h-6 text-pink-600 dark:text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-                    メールで申請
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    <a href="mailto:streetdancenavi@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">streetdancenavi@gmail.com</a> 宛に以下の情報を記載して送信
-                  </p>
-                  <ul className="text-sm text-gray-600 dark:text-gray-400 space-y-1">
-                    <li>・ エントリーID（注文番号）</li>
-                    <li>・ イベント名</li>
-                    <li>・ 登録メールアドレス</li>
-                    <li>・ 返金理由</li>
-                  </ul>
-                </div>
+                <p className="text-sm text-gray-500 dark:text-gray-500 mt-3">
+                  ※ 主催者は、参加費5,000円に加え、既に支払った手数料（プラットフォーム手数料70円 + Stripe決済手数料180円 = 250円）も負担します。
+                </p>
               </div>
-            </section>
 
-            {/* その他の注意事項 */}
-            <section className="mb-12 bg-gray-50 dark:bg-gray-800 p-8 rounded-xl">
-              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                その他の注意事項
-              </h2>
+              <h3 className="text-xl font-bold mb-3 mt-6 text-gray-900 dark:text-white">
+                イベント延期の場合
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                イベントが延期となった場合、参加者は以下のいずれかを選択できます：
+              </p>
               <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2">
-                <li>返金手数料は当サービスが負担します（お客様の負担はありません）</li>
-                <li>返金処理完了後、チケットは無効化され、イベントに参加できなくなります</li>
-                <li>一度返金された後、同じイベントへの再エントリーには別途決済が必要です</li>
-                <li>主催者都合による中止の場合、決済手数料も含めて全額返金されます</li>
-                <li>虚偽の返金申請や不正行為が確認された場合、アカウント停止の措置を取ることがあります</li>
+                <li>延期後の日程に参加する（チケットはそのまま有効）</li>
+                <li>全額返金を受ける</li>
               </ul>
             </section>
 
-            {/* お問い合わせ */}
             <section className="mb-12">
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
-                お問い合わせ
+                2. 参加者都合によるキャンセル
+              </h2>
+
+              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                ■ イベント開催日時の72時間前まで
+              </h3>
+
+              <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 mb-6">
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  参加費から以下の手数料を差し引いた金額を返金いたします。
+                </p>
+                <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2">
+                  <li>Stripe決済手数料（3.6%）</li>
+                  <li>プラットフォーム手数料（1.4%）</li>
+                  <li>返金処理手数料（100円）</li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl mb-6">
+                <h4 className="font-bold mb-3 text-gray-900 dark:text-white">返金額の計算例</h4>
+                <p className="text-gray-600 dark:text-gray-400 mb-2">
+                  参加費5,000円のイベントを72時間前までにキャンセルした場合:
+                </p>
+                <div className="bg-white dark:bg-gray-900 p-4 rounded-lg font-mono text-sm">
+                  <div className="space-y-1">
+                    <div className="flex justify-between">
+                      <span className="text-gray-600 dark:text-gray-400">参加費:</span>
+                      <span className="text-gray-900 dark:text-white">5,000円</span>
+                    </div>
+                    <div className="flex justify-between text-red-600 dark:text-red-400">
+                      <span>- Stripe決済手数料 (3.6%):</span>
+                      <span>-180円</span>
+                    </div>
+                    <div className="flex justify-between text-red-600 dark:text-red-400">
+                      <span>- プラットフォーム手数料 (1.4%):</span>
+                      <span>-70円</span>
+                    </div>
+                    <div className="flex justify-between text-red-600 dark:text-red-400">
+                      <span>- 返金処理手数料:</span>
+                      <span>-100円</span>
+                    </div>
+                    <div className="border-t border-gray-300 dark:border-gray-700 my-2"></div>
+                    <div className="flex justify-between font-bold">
+                      <span className="text-gray-900 dark:text-white">返金額:</span>
+                      <span className="text-blue-600 dark:text-blue-400">4,650円</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-bold mb-3 mt-6 text-gray-900 dark:text-white">
+                ■ イベント開催日時の72時間前以降
+              </h3>
+
+              <div className="bg-red-50 dark:bg-red-900/20 border-l-4 border-red-500 p-6 mb-6">
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  <strong>返金は原則として対応できません。</strong>
+                </p>
+                <p className="text-gray-600 dark:text-gray-400">
+                  ただし、イベント主催者が個別に返金を承認した場合はこの限りではありません。返金の可否については、イベント主催者に直接ご相談ください。
+                </p>
+              </div>
+
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl mb-6">
+                <h4 className="font-bold mb-3 text-gray-900 dark:text-white">72時間前の計算方法</h4>
+                <p className="text-gray-600 dark:text-gray-400 mb-3">
+                  「イベント開催日時の72時間前」とは、イベント開始時刻のちょうど72時間前を指します。
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 mb-2">
+                  <strong>例:</strong>
+                </p>
+                <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-1">
+                  <li>イベント開催: 12月10日（日）18:00</li>
+                  <li>72時間前: 12月7日（木）18:00</li>
+                  <li>→ 12月7日（木）18:00までのキャンセルで返金対象</li>
+                </ul>
+              </div>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                3. 主催者が独自の返金ポリシーを設定する場合
               </h2>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                返金ポリシーに関するご質問や、返金に関するご相談は、以下までお問い合わせください。
+                イベント主催者は、上記のポリシーより参加者に有利な返金ポリシーを設定することができます。
+              </p>
+
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl mb-6">
+                <h4 className="font-bold mb-3 text-gray-900 dark:text-white">主催者独自のポリシー例</h4>
+                <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2">
+                  <li>イベント前日までキャンセル可能</li>
+                  <li>いつでも全額返金</li>
+                  <li>手数料なしで返金</li>
+                </ul>
+              </div>
+
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                主催者が独自の返金ポリシーを設定している場合、イベントページに表示されます。<strong>エントリー前に必ず返金ポリシーをご確認ください。</strong>
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                4. 返金不可の例外事項
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                以下の場合、返金は一切行いません：
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2">
+                <li>参加者の都合による当日キャンセル・無断欠席</li>
+                <li>虚偽の情報によるエントリー</li>
+                <li>利用規約違反によるアカウント停止</li>
+                <li>イベント主催者が「返金不可」と明記しているイベント（エントリー前に明示されている場合）</li>
+              </ul>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                5. 返金の申請方法
+              </h2>
+
+              <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl mb-6">
+                <h4 className="font-bold mb-3 text-gray-900 dark:text-white">手順</h4>
+                <ol className="list-decimal pl-6 text-gray-600 dark:text-gray-400 space-y-2">
+                  <li>アプリ内の「エントリー履歴」から該当イベントを選択</li>
+                  <li>「キャンセル・返金申請」ボタンをタップ</li>
+                  <li>キャンセル理由を選択（任意）</li>
+                  <li>返金額を確認し、申請を完了</li>
+                </ol>
+              </div>
+
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                返金申請が承認されると、登録されたメールアドレスに通知が届きます。
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                6. 返金処理の期間と方法
+              </h2>
+
+              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                返金方法
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                決済時と同じクレジットカードへ自動的に返金されます。銀行振込やその他の方法での返金は対応しておりません。
+              </p>
+
+              <h3 className="text-xl font-bold mb-3 mt-6 text-gray-900 dark:text-white">
+                返金完了までの期間
+              </h3>
+              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2 mb-4">
+                <li><strong>返金申請の承認:</strong> 通常1〜3営業日</li>
+                <li><strong>Stripeによる返金処理:</strong> 承認後、即時実行</li>
+                <li><strong>カード会社への反映:</strong> 返金処理後、5〜10営業日</li>
+              </ul>
+
+              <p className="text-sm text-gray-500 dark:text-gray-500">
+                ※ カード会社によって反映までの期間が異なります。10営業日を過ぎても返金が確認できない場合は、カード会社にお問い合わせください。
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                7. 無料イベントのキャンセル
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                無料イベントの場合、イベント開始時刻までいつでもキャンセル可能です。手数料は発生しません。
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                8. お問い合わせ
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                返金ポリシーに関するご質問は、以下までお問い合わせください：
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                Email: <a href="mailto:streetdancenavi@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">streetdancenavi@gmail.com</a><br />
-                <a href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline mt-2 inline-block">お問い合わせフォーム</a>
+                Street Dance Navi<br />
+                代表者: 森田 大成<br />
+                Email: <a href="mailto:streetdancenavi@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">streetdancenavi@gmail.com</a>
               </p>
             </section>
           </div>

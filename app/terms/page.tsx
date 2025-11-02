@@ -62,6 +62,8 @@ export default function TermsPage() {
                 <li>「イベント主催者」とは、当サービスを通じてイベント情報を掲載し、参加者を募集する個人または法人を意味します。</li>
                 <li>「ダンサー」とは、当サービスを通じてイベント情報を閲覧し、エントリーを行うユーザーを意味します。</li>
                 <li>「コンテンツ」とは、文章、画像、動画、音声、その他の情報を意味します。</li>
+                <li>「QRチケット」とは、イベントエントリー完了時に発行される、QRコード付きの電子チケットを意味します。</li>
+                <li>「トーナメント機能」とは、イベント主催者が参加者の組み合わせを自動生成し、トーナメント表を作成・管理できる機能を意味します。</li>
               </ul>
             </section>
 
@@ -138,6 +140,67 @@ export default function TermsPage() {
               </p>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
                 4. イベントの開催可否、内容変更等は、イベント主催者の責任において行われるものとし、当サービスは一切の責任を負いません。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                5. エントリーが完了すると、QRコード付きの電子チケットが発行されます。このQRコードは、イベント当日の受付時に必要となります。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                6. 参加者は、イベント当日にQRコード付き電子チケットをイベント主催者に提示する必要があります。QRチケットは、イベント開始時刻からイベント終了時刻まで有効です。複数日にわたるイベントの場合、同じQRコードで各日入場できます。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                7. QRコードを第三者に譲渡・共有することは原則として禁止します。ただし、保護者がお子様の参加のために管理する場合など、家族間での共有は許可されます。不正利用が発覚した場合、アカウント停止等の措置を講じることがあります。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                8. 当サービスは、QRコードの不正利用を防止するため、スキャン履歴（日時、場所）を記録します。同じQRコードが短時間に複数の場所でスキャンされた場合、主催者に警告が表示されます。
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                第7条の2（通知機能）
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                1. イベント主催者は、エントリー済みの参加者に対して、プッシュ通知機能を用いて連絡を送信することができます。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                2. 通知の内容は、以下の目的での使用が想定されます：
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2 mb-4">
+                <li>イベント開催に関する重要な変更（日時、会場、内容等）</li>
+                <li>受付開始の案内</li>
+                <li>イベント当日の注意事項</li>
+                <li>イベント終了後のアンケート協力のお願い</li>
+                <li>次回イベントのお知らせ</li>
+                <li>その他、イベント参加に関連する情報</li>
+              </ul>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                3. 主催者は、過度な頻度での通知送信や、イベントと無関係な広告・宣伝のみを目的とした通知送信を控えるものとします。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                4. 参加者は、アプリの設定からプッシュ通知を無効にすることができますが、その場合、重要な連絡を受け取れない可能性があります。
+              </p>
+            </section>
+
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
+                第7条の3（トーナメント機能）
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                1. イベント主催者は、トーナメント形式のイベントにおいて、参加者の組み合わせを自動生成する機能を利用できます。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                2. トーナメントの組み合わせは、以下のいずれかの方法で決定されます：
+              </p>
+              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2 mb-4">
+                <li>システムによるランダム抽選</li>
+                <li>シード権設定やレベル分け（初級/中級/上級等）による自動振り分け</li>
+                <li>主催者による手動調整</li>
+              </ul>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                3. 組み合わせ決定のアルゴリズムおよび抽選結果について、参加者は異議を申し立てることはできません。不公平な組み合わせと思われる場合は、イベント主催者に直接ご相談ください。
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                4. トーナメント進行中のデータ（試合結果、スコア、順位等）は、イベント主催者および参加者が閲覧できます。
               </p>
             </section>
 

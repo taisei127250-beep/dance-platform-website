@@ -41,7 +41,9 @@ export default function PrivacyPage() {
               <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2">
                 <li>アカウント情報（メールアドレス、ユーザー名、プロフィール写真）</li>
                 <li>イベントへのエントリー情報（参加履歴、チケット購入履歴）</li>
-                <li>デバイス情報（デバイスID、OSバージョン、アプリバージョン）</li>
+                <li>QRチケット情報（発行日時、スキャン履歴、利用状況）</li>
+                <li>トーナメント関連情報（試合結果、スコア、順位、組み合わせ履歴）</li>
+                <li>デバイス情報（デバイスID、OSバージョン、アプリバージョン、プッシュ通知トークン）</li>
                 <li>位置情報（イベント検索のため、ユーザーの許可を得た場合のみ）</li>
                 <li>利用状況データ（アクセスログ、操作履歴）</li>
                 <li>決済情報（Stripeを通じた決済時の情報）</li>
@@ -59,9 +61,19 @@ export default function PrivacyPage() {
                 <li>当サービスの提供・運営・改善</li>
                 <li>イベント主催者とダンサーのマッチング</li>
                 <li>ユーザーサポート・問い合わせ対応</li>
-                <li>イベント情報・更新通知の配信</li>
-                <li>決済処理・チケット発行</li>
-                <li>不正利用の防止・セキュリティ対策</li>
+                <li>イベント情報・更新通知の配信（プッシュ通知含む）
+                  <ul className="list-circle pl-6 mt-2 space-y-1 text-sm">
+                    <li>イベント開催日が近づいた際のリマインダー通知</li>
+                    <li>エントリー完了通知</li>
+                    <li>イベント主催者からの重要なお知らせ（会場変更、開催時間変更等）</li>
+                    <li>主催者が参加者へ送信するメッセージ通知</li>
+                    <li>次回イベントのお知らせ、アンケート協力のお願い等</li>
+                  </ul>
+                </li>
+                <li>決済処理・QRチケットの発行</li>
+                <li>QRチケットのスキャンによる受付管理</li>
+                <li>トーナメント表の自動生成・進行管理</li>
+                <li>不正利用の防止・セキュリティ対策（QRコードの不正利用検知含む）</li>
                 <li>利用規約違反への対応</li>
                 <li>サービス改善のための統計データ分析</li>
               </ul>
@@ -95,6 +107,33 @@ export default function PrivacyPage() {
                 <p className="text-gray-600 dark:text-gray-400 mt-3 text-sm">
                   ※ 主催者は、これらの情報をイベント運営目的のみに使用することができます。
                 </p>
+
+                <div className="bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-500 p-4 mt-4">
+                  <h5 className="font-bold mb-2 text-gray-900 dark:text-white">参加者情報のエクスポートとアクセス期限</h5>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-3">
+                    主催者は、参加者リストをCSV形式等でエクスポートし、イベント管理に利用することができます。
+                  </p>
+
+                  <p className="text-gray-900 dark:text-white font-bold text-sm mb-2">【重要】主催者が遵守すべき事項:</p>
+                  <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 text-sm space-y-1 mb-3">
+                    <li>エクスポートした参加者情報は、以下の目的以外で使用してはなりません：
+                      <ul className="list-circle pl-6 mt-1 space-y-1">
+                        <li>イベント受付・運営</li>
+                        <li>イベント関連の連絡</li>
+                        <li>法令で求められる記録保持</li>
+                      </ul>
+                    </li>
+                    <li>スパムメールの送信、第三者への販売・提供等は厳禁です</li>
+                    <li>不正使用が発覚した場合、アカウント停止および法的措置を講じます</li>
+                  </ul>
+
+                  <p className="text-gray-900 dark:text-white font-bold text-sm mb-2">【参加者情報のアクセス期限】</p>
+                  <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 text-sm space-y-1">
+                    <li>主催者は、<strong>イベント終了後3年間</strong>、参加者情報にアクセスできます</li>
+                    <li>3年経過後は、個人情報保護のため、参加者の詳細情報（氏名、メールアドレス、電話番号等）は自動的にマスキングされます</li>
+                    <li>ただし、統計情報（参加人数、売上金額等）は引き続き閲覧可能です</li>
+                  </ul>
+                </div>
               </div>
 
               <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl mb-6">
@@ -351,8 +390,51 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                 10. 未成年者の個人情報
               </h2>
+
+              <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                アカウント作成の年齢制限
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                本サービスのアカウント作成は、原則として13歳以上を対象としています。これは、児童オンラインプライバシー保護法（COPPA）等の法令に準拠するためです。
+              </p>
+
+              <div className="bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 p-6 mb-6">
+                <h3 className="text-xl font-bold mb-3 text-gray-900 dark:text-white">
+                  13歳未満のお子様の参加方法
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  13歳未満のお子様がダンスイベントに参加される場合は、以下の方法をご利用ください：
+                </p>
+
+                <div className="bg-white dark:bg-gray-900 p-5 rounded-xl mb-4">
+                  <h4 className="font-bold mb-3 text-gray-900 dark:text-white">保護者代理エントリー方式</h4>
+                  <ol className="list-decimal pl-6 text-gray-600 dark:text-gray-400 space-y-2">
+                    <li>保護者の方がアカウントを作成してください</li>
+                    <li>保護者の方の名義でイベントにエントリーしてください</li>
+                    <li>エントリー時の備考欄またはお子様情報入力欄に、参加されるお子様の情報（名前、年齢、学年等）を記載してください</li>
+                    <li>QRチケットは保護者の方が管理し、イベント当日にお子様と一緒にご提示ください</li>
+                  </ol>
+                </div>
+
+                <p className="text-sm text-gray-500 dark:text-gray-500">
+                  ※ 保護者の方1名のアカウントで、複数のお子様の参加登録が可能です。家族間でのQRチケット共有は許可されています。
+                </p>
+              </div>
+
+              <h3 className="text-xl font-bold mb-3 mt-6 text-gray-900 dark:text-white">
+                保護者の同意と責任
+              </h3>
+              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2 mb-6">
+                <li>保護者の方がアカウントを作成・使用することで、お子様の個人情報の取り扱いについて同意したものとみなします</li>
+                <li>お子様のイベント参加に関する一切の責任は、保護者の方が負うものとします</li>
+                <li>イベント参加中の安全管理は、イベント主催者および保護者の方の責任において行われます</li>
+              </ul>
+
+              <h3 className="text-xl font-bold mb-3 mt-6 text-gray-900 dark:text-white">
+                13歳未満のお子様による不正なアカウント作成
+              </h3>
               <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                13歳未満の方は、保護者の同意なく当サービスを利用することはできません。13歳未満の方から個人情報を収集したことが判明した場合、速やかに削除します。
+                13歳未満のお子様が保護者の同意なく自らアカウントを作成したことが判明した場合、当該アカウントは予告なく削除させていただきます。また、既に決済が完了している場合の返金については、<a href="/refund" className="text-blue-600 dark:text-blue-400 hover:underline">返金ポリシー</a>に従うものとします。
               </p>
             </section>
 
