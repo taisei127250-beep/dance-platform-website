@@ -1,0 +1,7 @@
+# robots.txt for Street Dance Navi
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://streetdancenavi.com/sitemap.xml

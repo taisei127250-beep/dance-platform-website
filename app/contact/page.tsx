@@ -18,7 +18,7 @@ export default function ContactPage() {
           </h1>
 
           <div className="prose prose-lg dark:prose-invert max-w-none">
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
+            <p className="text-gray-900 dark:text-white mb-8">
               Street Dance Naviに関するご質問・ご意見・不具合報告などは、以下の方法でお問い合わせください。
             </p>
 
@@ -39,7 +39,7 @@ export default function ContactPage() {
                   <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
                     メール
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  <p className="text-gray-900 dark:text-white mb-4">
                     以下のアドレスまでお問い合わせください
                   </p>
                   <a
@@ -60,7 +60,7 @@ export default function ContactPage() {
                   <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">
                     アプリ内フォーム
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  <p className="text-gray-900 dark:text-white mb-4">
                     アプリの「マイページ」→「お問い合わせ」からもご連絡いただけます
                   </p>
                   <p className="text-sm text-gray-500 dark:text-gray-500">
@@ -81,7 +81,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">
                     Q. アプリは無料で使えますか？
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-900 dark:text-white">
                     A. アプリのダウンロードおよび基本機能（イベント検索・閲覧）は完全無料です。イベントへのエントリーには、主催者が設定した参加費が必要な場合があります。
                   </p>
                 </div>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">
                     Q. エントリーをキャンセルしたいのですが
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-900 dark:text-white">
                     A. イベント開始の3日前（72時間前）までであれば、アプリ内からキャンセルが可能です。詳細は<a href="/refund" className="text-blue-600 dark:text-blue-400 hover:underline">返金ポリシー</a>をご確認ください。
                   </p>
                 </div>
@@ -99,7 +99,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">
                     Q. ログインできなくなりました
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-900 dark:text-white">
                     A. パスワードをお忘れの場合は、ログイン画面の「パスワードを忘れた方」からリセットできます。それでも解決しない場合は、登録メールアドレスを明記の上、上記お問い合わせ先までご連絡ください。
                   </p>
                 </div>
@@ -108,10 +108,10 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">
                     Q. イベントを主催したいのですが
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-3">
+                  <p className="text-gray-900 dark:text-white mb-3">
                     A. アプリ内で誰でも簡単にイベントを作成できます。メールアドレスで登録後、すぐにイベントページの作成が可能です。担当者とのやりとりは不要です。
                   </p>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm">
+                  <p className="text-gray-900 dark:text-white text-sm">
                     <strong className="text-gray-900 dark:text-white">事前決済機能をご利用の場合：</strong><br />
                     参加費の事前決済を受け付けたい場合は、Stripeアカウントとの連携が必要です。アプリ内の「主催者設定」→「決済設定」からStripeアカウントを接続してください。Stripeアカウントをお持ちでない場合は、無料で作成できます。
                   </p>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">
                     Q. 決済に失敗しました
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-900 dark:text-white">
                     A. クレジットカード情報が正しいかご確認ください。カードの利用限度額や有効期限もご確認をお願いします。それでも解決しない場合は、エラーメッセージのスクリーンショットを添えてお問い合わせください。
                   </p>
                 </div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                   <h3 className="text-lg font-bold mb-2 text-gray-900 dark:text-white">
                     Q. チケットが表示されません
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-900 dark:text-white">
                     A. 決済完了後、数分以内にアプリの「マイページ」→「チケット」に表示されます。表示されない場合は、アプリの再起動をお試しください。それでも解決しない場合は、エントリーID（注文番号）を明記の上、お問い合わせください。
                   </p>
                 </div>
@@ -142,16 +142,16 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                 対応時間
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+              <p className="text-gray-900 dark:text-white leading-relaxed mb-4">
                 お問い合わせへの返信は、原則として2営業日以内に行います。<br />
                 ただし、以下の期間は対応が遅れる場合がございます：
               </p>
-              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-400 space-y-2">
+              <ul className="list-disc pl-6 text-gray-900 dark:text-white space-y-2">
                 <li>土日祝日</li>
                 <li>年末年始（12月29日〜1月3日）</li>
                 <li>夏季休業期間（お盆など）</li>
               </ul>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mt-4">
+              <p className="text-gray-900 dark:text-white leading-relaxed mt-4">
                 お急ぎの場合は、メールの件名に【至急】とご記載ください。
               </p>
             </section>
@@ -161,7 +161,7 @@ export default function ContactPage() {
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                 運営者情報
               </h2>
-              <div className="text-gray-600 dark:text-gray-400 space-y-2">
+              <div className="text-gray-900 dark:text-white space-y-2">
                 <p><strong className="text-gray-900 dark:text-white">サービス名:</strong> Street Dance Navi</p>
                 <p><strong className="text-gray-900 dark:text-white">運営責任者:</strong> 森田 大成</p>
                 <p><strong className="text-gray-900 dark:text-white">Email:</strong> <a href="mailto:streetdancenavi@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">streetdancenavi@gmail.com</a></p>

@@ -18,8 +18,8 @@ export default function CommercePage() {
           </h1>
 
           <div className="prose prose-lg dark:prose-invert max-w-none">
-            <p className="text-gray-600 dark:text-gray-400 mb-8">
-              最終更新日: 2024年12月31日
+            <p className="text-gray-900 dark:text-white mb-8">
+              最終更新日: 2025年11月2日
             </p>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg p-8 shadow-sm border border-gray-200 dark:border-gray-700">
@@ -29,7 +29,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white w-1/3">
                       事業者名
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       Street Dance Navi
                     </td>
                   </tr>
@@ -38,7 +38,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       運営責任者
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       森田 大成
                     </td>
                   </tr>
@@ -47,7 +47,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       所在地
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       お問い合わせいただいた方に遅滞なく開示いたします。<br />
                       <a href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline">
                         お問い合わせページ
@@ -59,7 +59,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       お問い合わせ
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       Email: <a href="mailto:streetdancenavi@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
                         streetdancenavi@gmail.com
                       </a><br />
@@ -73,7 +73,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       販売価格
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       各イベントの詳細ページに表示される金額<br />
                       ※消費税込みの価格を表示しています
                     </td>
@@ -83,7 +83,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       商品代金以外の<br />必要料金
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       決済手数料: クレジットカード決済時に発生する場合があります（各イベントページに明記）<br />
                       通信料: インターネット接続に伴う通信料はお客様のご負担となります
                     </td>
@@ -93,7 +93,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       支払方法
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       クレジットカード決済（Stripe）<br />
                       対応カード: Visa、Mastercard、American Express、JCB、Diners Club、Discover
                     </td>
@@ -103,7 +103,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       支払時期
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       イベントエントリー完了時に即時決済
                     </td>
                   </tr>
@@ -112,7 +112,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       商品の引渡時期
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       デジタルチケット: 決済完了後、即時アプリ内に表示されます<br />
                       イベント参加権: 各イベントの開催日時に準じます
                     </td>
@@ -122,13 +122,13 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       返品・キャンセル<br />について
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       デジタルコンテンツ（チケット）のため、原則として返品・返金には応じられません。<br />
                       ただし、以下の条件を満たす場合は返金対応いたします：
                       <ul className="list-disc pl-5 mt-2 space-y-1">
                         <li>イベント開始の3日前（72時間前）までにキャンセル申請がされた場合<br />
                           <span className="text-sm text-gray-500 dark:text-gray-500">
-                            ※ プラットフォーム手数料（1.4%）、決済手数料（3.6%）、返金処理手数料（100円）を差し引いた金額を返金します
+                            ※ プラットフォーム手数料（2.4%）、決済手数料（3.6%）、返金処理手数料（100円）を差し引いた金額を返金します
                           </span>
                         </li>
                         <li>イベント主催者都合によりイベントが中止された場合<br />
@@ -148,7 +148,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       返金方法
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       決済時に利用されたクレジットカードへの返金（Stripeを通じて処理）<br />
                       返金処理後、5〜10営業日程度でカード会社経由で返金されます
                     </td>
@@ -158,7 +158,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       サービス提供環境
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       <strong>iOS版:</strong> iOS 14.0以降<br />
                       <strong>Android版:</strong> Android 8.0以降<br />
                       インターネット接続が必要です
@@ -169,7 +169,7 @@ export default function CommercePage() {
                     <td className="py-4 pr-4 font-semibold text-gray-900 dark:text-white">
                       特記事項
                     </td>
-                    <td className="py-4 text-gray-600 dark:text-gray-400">
+                    <td className="py-4 text-gray-900 dark:text-white">
                       当サービスは、ダンスイベントのエントリープラットフォームです。<br />
                       イベントの開催責任はイベント主催者にあり、当サービスはプラットフォームを提供するのみです。<br />
                       イベント内容の変更・中止等については、イベント主催者にお問い合わせください。
@@ -183,10 +183,10 @@ export default function CommercePage() {
               <h2 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white">
                 お問い合わせ
               </h2>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+              <p className="text-gray-900 dark:text-white leading-relaxed mb-4">
                 特定商取引法に基づく表記についてのご質問は、以下までお問い合わせください。
               </p>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p className="text-gray-900 dark:text-white leading-relaxed">
                 Email: <a href="mailto:streetdancenavi@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">streetdancenavi@gmail.com</a><br />
                 <a href="/contact" className="text-blue-600 dark:text-blue-400 hover:underline mt-2 inline-block">お問い合わせフォーム</a>
               </p>
